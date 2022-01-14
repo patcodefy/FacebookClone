@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		EB4278292791150E0089D478 /* FacebookCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4278282791150E0089D478 /* FacebookCloneApp.swift */; };
-		EB42782B2791150E0089D478 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB42782A2791150E0089D478 /* ContentView.swift */; };
+		EB42782B2791150E0089D478 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB42782A2791150E0089D478 /* HomeView.swift */; };
 		EB42782D2791150E0089D478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB42782C2791150E0089D478 /* Assets.xcassets */; };
 		EB4278302791150E0089D478 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB42782F2791150E0089D478 /* Preview Assets.xcassets */; };
+		EB42783D27913A6B0089D478 /* StoriesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB42783C27913A6B0089D478 /* StoriesCard.swift */; };
+		EB42783F27913AB10089D478 /* FBPostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB42783E27913AB10089D478 /* FBPostCard.swift */; };
+		EB42784527913B260089D478 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB42784427913B260089D478 /* Post.swift */; };
+		EB42784A27913C9F0089D478 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB42784927913C9F0089D478 /* HomeViewModel.swift */; };
+		EB42784D27913CBD0089D478 /* HomeViewModellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB42784C27913CBD0089D478 /* HomeViewModellable.swift */; };
+		EB42784F27913E6C0089D478 /* SearchBarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB42784E27913E6C0089D478 /* SearchBarCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB4278252791150E0089D478 /* FacebookClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4278282791150E0089D478 /* FacebookCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookCloneApp.swift; sourceTree = "<group>"; };
-		EB42782A2791150E0089D478 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EB42782A2791150E0089D478 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EB42782C2791150E0089D478 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB42782F2791150E0089D478 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB42783C27913A6B0089D478 /* StoriesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCard.swift; sourceTree = "<group>"; };
+		EB42783E27913AB10089D478 /* FBPostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBPostCard.swift; sourceTree = "<group>"; };
+		EB42784427913B260089D478 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EB42784927913C9F0089D478 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EB42784C27913CBD0089D478 /* HomeViewModellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModellable.swift; sourceTree = "<group>"; };
+		EB42784E27913E6C0089D478 /* SearchBarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +63,12 @@
 		EB4278272791150E0089D478 /* FacebookClone */ = {
 			isa = PBXGroup;
 			children = (
-				EB4278282791150E0089D478 /* FacebookCloneApp.swift */,
-				EB42782A2791150E0089D478 /* ContentView.swift */,
-				EB42782C2791150E0089D478 /* Assets.xcassets */,
-				EB42782E2791150E0089D478 /* Preview Content */,
+				EB42783A279125840089D478 /* ViewControllers */,
+				EB42784827913C800089D478 /* ViewModels */,
+				EB42784727913B720089D478 /* Components */,
+				EB42784327913B050089D478 /* Models */,
+				EB42784227913AE90089D478 /* Application */,
+				EB42784627913B490089D478 /* Resources */,
 			);
 			path = FacebookClone;
 			sourceTree = "<group>";
@@ -65,6 +79,66 @@
 				EB42782F2791150E0089D478 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB42783A279125840089D478 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB42782A2791150E0089D478 /* HomeView.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EB42784227913AE90089D478 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EB4278282791150E0089D478 /* FacebookCloneApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EB42784327913B050089D478 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB42784427913B260089D478 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB42784627913B490089D478 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB42782C2791150E0089D478 /* Assets.xcassets */,
+				EB42782E2791150E0089D478 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EB42784727913B720089D478 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EB42783C27913A6B0089D478 /* StoriesCard.swift */,
+				EB42783E27913AB10089D478 /* FBPostCard.swift */,
+				EB42784E27913E6C0089D478 /* SearchBarCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EB42784827913C800089D478 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EB42784B27913CA70089D478 /* Protocols */,
+				EB42784927913C9F0089D478 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EB42784B27913CA70089D478 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB42784C27913CBD0089D478 /* HomeViewModellable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +211,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB42782B2791150E0089D478 /* ContentView.swift in Sources */,
+				EB42782B2791150E0089D478 /* HomeView.swift in Sources */,
+				EB42784A27913C9F0089D478 /* HomeViewModel.swift in Sources */,
 				EB4278292791150E0089D478 /* FacebookCloneApp.swift in Sources */,
+				EB42784F27913E6C0089D478 /* SearchBarCard.swift in Sources */,
+				EB42783D27913A6B0089D478 /* StoriesCard.swift in Sources */,
+				EB42783F27913AB10089D478 /* FBPostCard.swift in Sources */,
+				EB42784527913B260089D478 /* Post.swift in Sources */,
+				EB42784D27913CBD0089D478 /* HomeViewModellable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +348,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FacebookClone/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FacebookClone/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = M668R687KK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -297,7 +377,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FacebookClone/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FacebookClone/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = M668R687KK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
